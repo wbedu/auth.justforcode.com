@@ -18,8 +18,13 @@ $(document).ready(() =>{
         $('error').css({display:'none'});
         if(user){
             let urlParams = new URLSearchParams(location.search);
-            urlParams.has('d');
-            window.open(urlParams.get('d'),'_self',false)
+            if(urlParams.has('d')){
+                window.open(urlParams.get('d'),'_self',false)
+            }else{
+                alert("Error Authenticating");
+                window.open('/404.html','_self',false)
+            }
+
         }
     });
 
