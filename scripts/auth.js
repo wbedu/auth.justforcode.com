@@ -19,7 +19,6 @@ $(document).ready(() =>{
         if(user){
             let urlParams = new URLSearchParams(location.search);
             urlParams.has('d');
-            alert(urlParams.get('d'))
             window.open(urlParams.get('d'),'_self',false)
         }
     });
