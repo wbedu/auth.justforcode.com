@@ -19,12 +19,15 @@ $(document).ready(() =>{
         if(user){
             let urlParams = new URLSearchParams(location.search);
             if(urlParams.has('d')){
-                window.open(urlParams.get('d'),'_self',false)
+                let destURL = urlParams.get('d');
+
+                destURL = destURL.includes('?') ? `${destURL}&r=572457`:`${destURL}?r=572457`;
+
+                window.open(destURL,'_self',false)
             }else{
                 alert("Error Authenticating");
                 window.open('/404.html','_self',false)
             }
-
         }
     });
 
