@@ -1,0 +1,38 @@
+
+
+small,p,label{
+    color: #497775;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #497775;
+}
+.main-content{
+    display: flex;
+    justify-content: center;
+}
+
+.login-card{
+    top: 25%;
+    width: 100%;
+}
+
+.form-elms{
+    padding: 15px;
+}
+
+.jfcref{
+    text-align: right;
+}
+
+#submit-button{
+    background-color: #fbc926;
+    margin: inherit;
+}
+
+error{
+    display: none;
+    color: red;
+}
